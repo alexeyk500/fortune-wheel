@@ -1,0 +1,95 @@
+.wrapper {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheelWrapper {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 4px solid #4b5563; /* gray-700 */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: none;
+}
+
+.sector {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform-origin: bottom left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.75rem; /* text-xs */
+}
+
+.pointer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    z-index: 10;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 24px solid #facc15; /* yellow-400 */
+}
+
+.spinButton {
+    padding: 0.5rem 1.5rem;
+    background-color: #2563eb; /* blue-600 */
+    color: white;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.spinButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.result {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.resultGreen {
+    color: #16a34a; /* green-600 */
+}
+
+.resultRed {
+    color: #dc2626; /* red-600 */
+}
+
+.resultBlack {
+    color: #000000;
+}
+
+.bgGreen {
+    background-color: #16a34a; /* green-600 */
+}
+
+.bgRed {
+    background-color: #dc2626;
+    color: white;
+}
+
+.bgBlack {
+    background-color: #000000;
+    color: white;
+}
