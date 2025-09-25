@@ -26,9 +26,9 @@ export const BetControls: React.FC<BetControlsProps> = ({ bets,
     <div className={styles.controls}>
       <div className={styles.infoRow}>
         { selectedSector === null
-          ?' ☝️- Выбери сектор для ставки️'
+          ?' Выбери сектор для ставки️ - ☝️'
           : !selectedBetAmount
-          ? ' 👇️- Выбери размер ставки️'
+          ? ' Выбери размер ставки️ - 👇️'
           :''
         }
         { selectedSector !== null && selectedBetAmount && ' Можно делать ставку️ - 👍'
