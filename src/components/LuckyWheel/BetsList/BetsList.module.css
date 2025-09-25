@@ -1,0 +1,74 @@
+.betsList {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  width: 100%;
+  margin-top: 20px;
+  height: 10em; /* примерно 5 строк по 1.5em */
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-color-bets_section);
+  border: 1px solid var(--yelow-color);
+  border-radius: 8px;
+}
+
+.noBetsContainer {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  height: 10em; /* примерно 5 строк по 1.5em */
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-color-bets_section);
+  border: 1px solid var(--yelow-color);
+  border-radius: 8px;
+}
+
+.noBetsInstr {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: var(--yelow-color);
+  text-align: center;
+}
+
+.title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: var(--yelow-color);
+  text-align: center;
+}
+
+.noBetsTitle {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 11px;
+  color: var(--yelow-color);
+  text-align: center;
+}
+
+.betsList ul {
+  display: grid;
+  grid-template-columns: 1fr; /* изначально 1 колонка */
+  gap: 6px 12px;              /* вертикальный и горизонтальный gap */
+  padding: 0;
+  margin: 0;
+}
+
+.betItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background-color: var(--background-color-section);
+  color: var(--text-color-main);
+}
+
+.remove {
+  color: #a60606;
+}

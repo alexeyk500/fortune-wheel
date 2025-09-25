@@ -1,0 +1,10 @@
+.wheel {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: var(--background-color-main);
+  transition: box-shadow 0.2s ease;
+}
+

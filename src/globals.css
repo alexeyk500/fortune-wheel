@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: Montserrat, serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background-color-main: #000218;
+  --background-color-secondary: #161a54;
+  --background-color-section: #211d38;
+
+  --background-color-bets_section: #374758;
+
+  --text-color-main: #ffffff;
+  --text-color-gray: #A19F9F;
+  --text-color-red: #FF0000FF;
+  --text-color-green: #3bd218;
+  --text-color-blue: #0098EA;
+
+  color-scheme: light dark;
+  color: var(--text-color-main);
+  background-color: var(--background-color-main);
+  user-select: none;
+
+  --yelow-color: #FDC728;
+  --lime-color: #66ff00;
+  --golden-color: #d39318;
+  --silver-color: #d0d0d0;
+  --linear-gradient-main: linear-gradient(45deg, #FDC728 -35%, #FF3232);
+  --linear-gradient-secondary: linear-gradient(45deg, #0098EA, #0095ff);
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+img {
+  -webkit-user-drag: none;
+}
